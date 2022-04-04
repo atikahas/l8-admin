@@ -16,8 +16,8 @@ class AdminSeeder extends Seeder
     public function run()
     {
        User::create([
-            'name' => 'admin',
-            'email' => 'admin@gmail.com',
+            'name' => 'Admin',
+            'email' => 'admin@agagroup.my',
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         ])->assignRole('writer', 'admin');
